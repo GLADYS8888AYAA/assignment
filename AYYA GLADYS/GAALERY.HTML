@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - John Doe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+</style>
+<body>
+    <header>
+        <h1>AYAA GLADYS</h1>
+        <p>Web Developer</p>
+        
+    </header>
+    
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="IMG2.jpeg" >
+            <img src="IMG2.jpeg" >
+            <img src="IMG2.jpeg" >
+            <img src="IMG4.JPEG" >
+            <img src="IMG4.jpeg" >
+            <img src="IMG2.jpeg" >
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 AYAA GLADYS</p>
+    </footer>
+</body>
+</html>
