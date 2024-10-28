@@ -1,73 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #ccc;
-}
-
-h2 {
-    color: #333;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-}
-
-</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
+    <title>My CV - Ayaa Gladys</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center p-3">
         <h1>AYAA GLADYS</h1>
         <p>Web Developer</p>
-        <nav>
-            <ul>
-                <li><a href="ABOUTME.HTML">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <Li><a href="GAALERY.html">Gallery</a> </Li>
-            </ul>
-        </nav>
     </header>
-    
+
+    <!-- Bootstrap Navbar with Dropdown Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Ayaa Gladys</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="ABOUTME.HTML">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">placeholder</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="GAALERY.HTML">Gallery</a>
+                        <a class="dropdown-item" href="NEW.html">Home</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <section id="about">
         <h2>About Me</h2>
         <p>I am a passionate web developer with experience in creating dynamic and responsive websites.</p>
@@ -93,5 +101,10 @@ footer {
     <footer>
         <p>&copy; 2024 AYAA GLADYS</p>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
